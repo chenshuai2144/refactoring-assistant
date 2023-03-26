@@ -41,12 +41,12 @@ export const BaseLayout: React.FC<{
             {
               path: '/classtohooks',
               icon: <AuditOutlined />,
-              name: 'class 转 hooks 写法',
+              name: 'class 转 hooks',
             },
             {
               path: '/bigfishtov4',
               icon: <BulbOutlined />,
-              name: 'bigfish 写法修改',
+              name: 'dva 改 hooks',
             },
           ],
         }}

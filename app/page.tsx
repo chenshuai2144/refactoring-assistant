@@ -27,8 +27,52 @@ const MonacoEditor = dynamic(
 );
 
 function Home() {
-  const [lessCode, setLessCode] = React.useState('');
-  const [cssInJsCode, setCssInJsCode] = React.useState('');
+  const [lessCode, setLessCode] = React.useState(`
+  .miniChart {
+    position: relative;
+    width: 100%;
+    .chartContent {
+      position: absolute;
+      bottom: -28px;
+      width: 100%;
+      > div {
+        margin: 0 -5px;
+        overflow: hidden;
+      }
+    }
+    .chartLoading {
+      position: absolute;
+      top: 16px;
+      left: 50%;
+      margin-left: -7px;
+    }
+  }
+  `);
+  const [cssInJsCode, setCssInJsCode] = React.useState(`
+  import { createStyles } from 'antd-style';
+
+const useStyles = createStyles(() => {
+  return {
+    miniChart: {
+      position: 'relative',
+      width: '100%',
+    },
+    chartContent: {
+      position: 'absolute',
+      bottom: '-28px',
+      width: '100%',
+      '> div': { margin: '0 -5px', overflow: 'hidden' },
+    },
+    chartLoading: {
+      position: 'absolute',
+      top: '16px',
+      left: '50%',
+      marginLeft: '-7px',
+    },
+  };
+});
+export default useStyles;
+  `);
   return (
     <>
       <FloatButton
