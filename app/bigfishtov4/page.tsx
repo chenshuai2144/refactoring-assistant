@@ -324,7 +324,7 @@ function BigfishToV4() {
         }}
       >
         <MonacoEditor
-          language="less"
+          language="typescript"
           width="50%"
           height="100%"
           theme="vs-dark"

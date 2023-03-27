@@ -95,7 +95,7 @@ export default useStyles;
         }}
       >
         <MonacoEditor
-          language="typescript"
+          language="less"
           width="50%"
           height="100%"
           theme="vs-dark"
